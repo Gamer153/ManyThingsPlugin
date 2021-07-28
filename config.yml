@@ -1,0 +1,17 @@
+loaded-message: 'Now loaded with config:'
+
+player-join-message: '%n spielt jetzt mit.' # %n will be replaced with the player name
+invsee-allowed-players: [Gamer153]
+
+teaser-texts: ["Hast du schon den neuen /gmm-Befehl ausprobiert?", "Als Admin oder Owner kannst du mit \"/move off\" andere Spieler einfrieren (und mit \"/move on\" wieder auftauen)!"]
+display-teasers: true
+teaser-time: 0.1
+
+show-gmmenu-hint: true
+
+change-list-info: false
+list-version-display: 'mc.vlant.de'
+list-version-hover: '§7vlant.de :-)'
+
+currently-offline: false
+offline-message: 'Server currently offline... Sorry!'

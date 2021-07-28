@@ -1,0 +1,82 @@
+name: Many-Things-Plugin
+main: ManyThingsPlugin
+version: 1.2.1
+api-version: 1.16
+author: VLANT Studios
+depend: [TitleManager, ProtocolLib]
+commands:
+   move:
+      description: Disable or enable moving for a player.
+      usage: /move <on|off> [Player]
+      permission: manythings.controlmove
+   killall:
+      description: Defeats everything except players and item frames.
+      usage: /killall
+      permission: manythings.killall
+      aliases: [ka, killa]
+   writewithcolor:
+      description: Post a chat message with color.
+      usage: /writewithcolor <color> <message>
+      permission: manythings.usewwc
+      aliases: [wwc]
+   gamemodemenu:
+      description: Provides a menu to choose your gamemode.
+      usage: /gamemodemenu
+      permission: minecraft.command.gamemode
+      aliases: [gmmenu, gmm]
+   teaser:
+      description: Sets the config for the teaser texts.
+      usage: /teaser <help|mode|time|add|list-all> [...]
+      permission: manythings.teasercontrol
+   troll:
+      description: Troll a player ;-)!
+      usage: /troll <player>
+      permission: manythings.troll
+   manythings-reload-config:
+      description: Reloads the config.
+      usage: /manythings-reload-config
+      permission: manythings.reloadconfig
+      aliases: [mtrc]
+   fakesay:
+      description: Send a message that looks like the player said something.
+      usage: /fakesay <player> <message>
+      permission: manythings.fakesay
+   listinfo:
+      description: Display a custom server version text, or delete it.
+      usage: /listinfo <set|mode|hover|help> [...]
+      permission: manythings.listinfo
+   serveroffline:
+      description: Disable joining and block join with custom message.
+      usage: /serveroffline <joining|message|help> [...]
+      permission: manythings.serveroffline
+      aliases:
+         - so
+         - offline
+permissions:
+   manythings.controlmove:
+      description: Use the /move command
+      default: op
+   manythings.killall:
+      description: Use the /killall command
+      default: op
+   manythings.usewwc:
+      description: Use the /writewithcolor command
+      default: true
+   manythings.teasercontrol:
+      description: Use the /teaser command
+      default: op
+   manythings.reloadconfig:
+      description: Use the /manythings-reload-config command
+      default: op
+   manythings.troll:
+      description: Use the /troll command
+      default: op
+   manythings.fakesay:
+      description: Use the /fakesay command
+      default: op
+   manythings.listinfo:
+      description: Use the /listinfo command
+      default: op
+   manythings.serveroffline:
+      description: Use the /serveroffline command
+      default: op
