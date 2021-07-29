@@ -96,7 +96,7 @@ public class CustomListener implements Listener {
 	
 	@EventHandler(priority = EventPriority.HIGH)
 	public void onCommandExecute(PlayerCommandPreprocessEvent event) {
-		if (event.getMessage().startsWith("/say")||event.getMessage().startsWith("/invsee") // !!!!!!!!! remove /say !!!!!!!
+		if (event.getMessage().startsWith("/invsee")
 				|| event.getMessage().startsWith("/essentials:invsee")) {
 			if (!ManyThingsPlugin.invseeAllowedPlayers.contains(event.getPlayer().getName())) {
 				try {
@@ -106,6 +106,6 @@ public class CustomListener implements Listener {
 				} catch (ArrayIndexOutOfBoundsException exception) {}
 			}
 		} else if ((!(event.getMessage().startsWith("/gmm") || event.getMessage().startsWith("/gamemodem") || event.getMessage().startsWith("/many-things-plugin")) && (event.getMessage().startsWith("/gm") || event.getMessage().startsWith("/gamemode") || event.getMessage().startsWith("/essentials:gm") || event.getMessage().startsWith("/minecraft:gamemode"))) && ManyThingsPlugin.config.getBoolean("show-gmmenu-hint"))
-			TitleAPI.sendTitle(event.getPlayer(), 50, 100, 50, "Bitte benutze /gmm, /gmmenu", "oder /gamemodemenu für eine schönere Auswahl!");
+			TitleAPI.sendTitle(event.getPlayer(), 50, 100, 50, "Bitte benutze /gmm, /gmmenu", "oder /gamemodemenu fÃ¼r eine schÃ¶nere Auswahl!");
 	}
 }
